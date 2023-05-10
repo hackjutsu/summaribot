@@ -1,12 +1,12 @@
 import openai
 
-with open('.token', 'r') as token_file:
-  api_key = token_file.read()
+with open('.openai_api_key', 'r') as api_key_file:
+  api_key = api_key_file.read()
 
 # Set up the OpenAI API client
 openai.api_key = api_key
 
-file_name = 'report.text'
+file_name = 'report.txt'
 
 with open(file_name, 'r') as file:
     text = file.read()

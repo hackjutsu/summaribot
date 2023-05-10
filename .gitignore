@@ -1,4 +1,5 @@
-.token
+.*key
 screenshot.png
 *.pdf
 *.text
+*.txt
